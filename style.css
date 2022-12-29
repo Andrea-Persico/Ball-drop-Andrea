@@ -1,0 +1,98 @@
+/* bouncing ball */
+body {
+
+    padding: 0;
+    margin: 0;
+}
+
+.mycanvas {
+    background-color: #94bcdf;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/* .bouncer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+} */
+
+.bouncer {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 50px;
+    height: 50px;
+    background: purple;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 270px;
+    animation: bounce 1s infinite ;
+}
+
+@keyframes bounce {
+    /* from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    } */
+
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+
+    30%{
+        height: 50px;
+        width: 55px;
+    }
+    50%{
+
+        height: 50px;
+        width: 68px;
+        transform: translateY(250px);
+    }
+    74%{
+        height: 50px;
+        width: 58px;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.shadow {
+    background-color: rgba(108, 93, 93, 0.172);
+    position: relative;
+    border-radius: 50%;
+    width: 48px;
+    height: 10px;
+    top: 335px;
+    left: 275px;
+    animation: shadow 1s infinite;
+    
+}
+
+@keyframes shadow {
+    50% {
+        transform: scaleX(0.4);
+    }
+}
+.container{
+    width: 57px;
+    height: 50px;
+}
+
